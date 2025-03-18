@@ -1,0 +1,7 @@
+id,current,pattern,connector,maker,mode
+0,DC Fahrzeugkupplung Typ Combo 2 (CCS),,,,
+1,DC,CHadeMO,cablefemale,CHadeMO,4
+2,AC Typ 2 Fahrzeugkupplung,,,,
+3,AC Typ 1 Steckdose,,,,
+4,AC Typ 2 Steckdose,,,,
+5,AC,Schuko,,,2

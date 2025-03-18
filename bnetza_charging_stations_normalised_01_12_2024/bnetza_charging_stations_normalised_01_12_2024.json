@@ -1,0 +1,494 @@
+{
+    "name": "bnetza_charging_stations_normalised_01_12_2024",
+    "title": "FAIR Charging Station data (Normalised)",
+    "id": "bnetza_charging_stations_normalised_01_12_2024",
+    "description": "Normalised dataset based on the BNetzA charging station data. Column names translated to english.",
+    "language": [
+        "de-DE",
+        "en-GB"
+    ],
+    "subject": [
+        {
+            "name": "vehicle charging station",
+            "path": "http://openenergy-platform.org/ontology/oeo/OEO_00320040"
+        }
+    ],
+    "keywords": [
+        "electric vehicles",
+        "charging stations",
+        "mobility"
+    ],
+    "spatial": {
+        "location": "Germany",
+        "extent": "Germany",
+        "resolution": "point"
+    },
+    "sources": [
+        {
+            "title": "BNetzA Ladesäulenkarte",
+            "description": "Die Bundesnetzagentur veröffentlicht die im Rahmen der Ladesäulenverordnung (LSV) gemeldeten Daten zur öffentlich zugänglichen Ladeinfrastruktur in Deutschland.",
+            "path": "https://data.bundesnetzagentur.de/Bundesnetzagentur/SharedDocs/Downloads/DE/Sachgebiete/Energie/Unternehmen_Institutionen/E_Mobilitaet/ladesaeulenregister.xlsx",
+            "licenses": [
+                {
+                    "name": "CC BY 4.0",
+                    "title": "Attribution 4.0 International",
+                    "path": "https://creativecommons.org/licenses/by/4.0",
+                    "attribution": "Bundesnetzagentur.de",
+                    "instruction": "You are free to copy and redistribute the material in any medium or format. You are free to remix, transform, and build upon the material for any purpose, even commercially."
+                }
+            ]
+        },
+        {
+            "title": "FAIR Charging Station Data Script",
+            "description": "The script used to clean and annotate this dataset.",
+            "path": "https://doi.org/10.5281/zenodo.10201060",
+            "licenses": [
+                {
+                    "name": "BSD-3-Clause",
+                    "title": "BSD 3-Clause License",
+                    "path": "https://opensource.org/license/bsd-3-clause/",
+                    "attribution": "German Aerospace Center (DLR) - 2023"
+                }
+            ]
+        }
+    ],
+    "licenses": [
+        {
+            "name": "CC BY 4.0",
+            "title": "Attribution 4.0 International",
+            "path": "https://creativecommons.org/licenses/by/4.0",
+            "attribution": "Copyright (c) 2023 German Aerospace Center (DLR)",
+            "instruction": "You are free to copy and redistribute the material in any medium or format. You are free to remix, transform, and build upon the material for any purpose, even commercially."
+        }
+    ],
+    "resources": [
+        {
+            "profile": "tabular-data-resource",
+            "name": "model_draft.bnetza_charging_columns_01_12_2024",
+            "path": "bnetza_charging_columns_01_12_2024.csv",
+            "format": "PostgreSQL",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer",
+                        "description": "Unique identifier"
+                    },
+                    {
+                        "name": "operator_id",
+                        "type": "integer",
+                        "description": "Identifier of the operator"
+                    },
+                    {
+                        "name": "location_id",
+                        "type": "integer",
+                        "description": "Identifier of the location"
+                    },
+                    {
+                        "name": "display_name",
+                        "type": "string",
+                        "description": "Display name.",
+                        "isAbout": [
+                            {
+                                "name": "label",
+                                "path": "http://www.w3.org/2000/01/rdf-schema#label"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "commissioning_date",
+                        "type": "date",
+                        "description": "Commissioning date of the station.",
+                        "isAbout": [
+                            {
+                                "name": "commissioning date",
+                                "path": "https://openenergy-platform.org/missing_term"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "net_capacity",
+                        "type": "float",
+                        "description": "Declared net capacity in KW.",
+                        "unit": "kW",
+                        "isAbout": [
+                            {
+                                "name": "declared net capacity",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00230002"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "column_type",
+                        "type": "string",
+                        "description": "Type of charging configuration.",
+                        "isAbout": [
+                            {
+                                "name": "type of column",
+                                "path": "https://openenergy-platform.org/missing_term"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "regular",
+                                "name": "normal charging",
+                                "path": "https://openenergy-platform.org/missing_term"
+                            },
+                            {
+                                "value": "fast",
+                                "name": "fast charging",
+                                "path": "https://openenergy-platform.org/missing_term"
+                            }
+                        ]
+                    }
+                ],
+                "primaryKey": [
+                    "id"
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": [
+                            "operator_id"
+                        ],
+                        "reference": {
+                            "resource": "model_draft.bnetza_operators_01_12_2024",
+                            "fields": [
+                                "id"
+                            ]
+                        }
+                    },
+                    {
+                        "fields": [
+                            "location_id"
+                        ],
+                        "reference": {
+                            "resource": "model_draft.bnetza_locations_01_12_2024",
+                            "fields": [
+                                "id"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "dialect": {
+                "delimiter": ",",
+                "decimalSeparator": "."
+            }
+        },
+        {
+            "profile": "tabular-data-resource",
+            "name": "model_draft.bnetza_charging_points_01_12_2024",
+            "path": "bnetza_charging_points_01_12_2024.csv",
+            "format": "PostgreSQL",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer",
+                        "description": "Unique identifier"
+                    },
+                    {
+                        "name": "column_id",
+                        "type": "integer",
+                        "description": "Identifier of column"
+                    },
+                    {
+                        "name": "charger_power",
+                        "type": "float",
+                        "description": "Power capacity of the charging point.",
+                        "unit": "kW",
+                        "isAbout": [
+                            {
+                                "name": "power capacity",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00010257"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "public_key",
+                        "type": "string",
+                        "description": "Public key of the charging point",
+                        "isAbout": [
+                            {
+                                "name": "public key",
+                                "path": "https://openenergy-platform.org/missing_term"
+                            }
+                        ]
+                    }
+                ],
+                "primaryKey": [
+                    "id"
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": [
+                            "column_id"
+                        ],
+                        "reference": {
+                            "resource": "model_draft.bnetza_charging_columns_01_12_2024",
+                            "fields": [
+                                "id"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "dialect": {
+                "delimiter": ",",
+                "decimalSeparator": "."
+            }
+        },
+        {
+            "profile": "tabular-data-resource",
+            "name": "model_draft.bnetza_operators_01_12_2024",
+            "path": "bnetza_operators_01_12_2024.csv",
+            "format": "PostgreSQL",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer",
+                        "description": "Unique identifier"
+                    },
+                    {
+                        "name": "operator",
+                        "type": "string",
+                        "description": "Organisation behind the operation of the station.",
+                        "isAbout": [
+                            {
+                                "name": "organisation",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00030022"
+                            }
+                        ]
+                    }
+                ],
+                "primaryKey": [
+                    "id"
+                ]
+            },
+            "dialect": {
+                "delimiter": ",",
+                "decimalSeparator": "."
+            }
+        },
+        {
+            "profile": "tabular-data-resource",
+            "name": "model_draft.bnetza_locations_01_12_2024",
+            "path": "bnetza_locations_01_12_2024.csv",
+            "format": "PostgreSQL",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer",
+                        "description": "Unique identifier"
+                    },
+                    {
+                        "name": "thoroughfare",
+                        "type": "string",
+                        "description": "The name of a passage or way through from one location to another.",
+                        "isAbout": [
+                            {
+                                "name": "thoroughfare",
+                                "path": "http://www.w3.org/ns/locn#thoroughfare"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "locator_designator",
+                        "type": "string",
+                        "description": "A number or sequence of characters that uniquely identifies the locator within the relevant scope.",
+                        "isAbout": [
+                            {
+                                "name": "locator designator",
+                                "path": "http://www.w3.org/ns/locn#locatorDesignator"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "address_supplement",
+                        "type": "string",
+                        "description": "Supplemental address information",
+                        "isAbout": [
+                            {
+                                "name": "supplemental address component",
+                                "path": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/SupplementalAddressComponent"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "post_name",
+                        "type": "string",
+                        "description": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
+                        "isAbout": [
+                            {
+                                "name": "post name",
+                                "path": "http://www.w3.org/ns/locn#postName"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "federal_state",
+                        "type": "string",
+                        "description": "Federal state.",
+                        "isAbout": [
+                            {
+                                "name": "administrative unit level 1",
+                                "path": "http://www.w3.org/ns/locn#adminUnitL1"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "county",
+                        "type": "string",
+                        "description": "County.",
+                        "isAbout": [
+                            {
+                                "name": "administrative unit level 2",
+                                "path": "http://www.w3.org/ns/locn#adminUnitL2"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "postcode",
+                        "type": "integer",
+                        "description": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
+                        "isAbout": [
+                            {
+                                "name": "post code",
+                                "path": "http://www.w3.org/ns/locn#postCode"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "float",
+                        "description": "Latitude in the WSG84 reference system.",
+                        "isAbout": [
+                            {
+                                "name": "latitude",
+                                "path": "https://www.w3.org/2003/01/geo/wgs84_pos#latitude"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "float",
+                        "description": "Longitude in the WSG84 reference system",
+                        "isAbout": [
+                            {
+                                "name": "longitude",
+                                "path": "https://www.w3.org/2003/01/geo/wgs84_pos#longitude"
+                            }
+                        ]
+                    }
+                ],
+                "primaryKey": [
+                    "id"
+                ]
+            },
+            "dialect": {
+                "delimiter": ",",
+                "decimalSeparator": "."
+            }
+        },
+        {
+            "profile": "tabular-data-resource",
+            "name": "model_draft.bnetza_charging_sockets_01_12_2024",
+            "path": "bnetza_charging_sockets_01_12_2024.csv",
+            "format": "csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer",
+                        "description": "Unique identifier"
+                    },
+                    {
+                        "name": "current",
+                        "type": "string",
+                        "description": "Current mode of the socket"
+                    },
+                    {
+                        "name": "pattern",
+                        "type": "string",
+                        "description": "Connection pattern of the connector"
+                    },
+                    {
+                        "name": "connector",
+                        "type": "string",
+                        "description": "Type of coupling"
+                    },
+                    {
+                        "name": "maker",
+                        "type": "string",
+                        "description": "Developer of the socket type"
+                    },
+                    {
+                        "name": "mode",
+                        "type": "string",
+                        "description": "Charging mode of the connector"
+                    }
+                ],
+                "primaryKey": [
+                    "id"
+                ]
+            }
+        },
+        {
+            "profile": "tabular-data-resource",
+            "name": "model_draft.bnetza_charging_compatibility_01_12_2024",
+            "path": "bnetza_charging_compatibility_01_12_2024.csv",
+            "format": "csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer",
+                        "description": "Unique identifier"
+                    },
+                    {
+                        "name": "point_id",
+                        "type": "integer",
+                        "description": "Identifier of the charging point"
+                    },
+                    {
+                        "name": "socket_id",
+                        "type": "integer",
+                        "description": "Identifier of the compatible sockets."
+                    }
+                ],
+                "primaryKey": [
+                    "id"
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": [
+                            "point_id"
+                        ],
+                        "reference": {
+                            "resource": "bnetza_charging_points_01_12_2024",
+                            "fields": [
+                                "id"
+                            ]
+                        }
+                    },
+                    {
+                        "fields": [
+                            "socket_id"
+                        ],
+                        "reference": {
+                            "resource": "bnetza_charging_sockets_01_12_2024",
+                            "fields": [
+                                "id"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "publicationDate": "2024-12-01"
+}
