@@ -65,7 +65,7 @@
         {
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_charging_columns_01_12_2024",
-            "path": "bnetza_charging_columns_01_12_2024.csv",
+			"path": "https://github.com/NFDI4Energy/SOMMER/blob/054f0877c1cf021d789de674d1fcbf6ea8eb9b49/bnetza_charging_stations_normalised_01_12_2024/bnetza_charging_columns_01_12_2024.csv",
             "format": "PostgreSQL",
             "schema": {
                 "fields": [
@@ -241,7 +241,7 @@
         {
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_operators_01_12_2024",
-            "path": "bnetza_operators_01_12_2024.csv",
+            "path": "https://github.com/NFDI4Energy/SOMMER/blob/054f0877c1cf021d789de674d1fcbf6ea8eb9b49/bnetza_charging_stations_normalised_01_12_2024/bnetza_operators_01_12_2024.csv",
             "format": "PostgreSQL",
             "schema": {
                 "fields": [
@@ -274,7 +274,7 @@
         {
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_locations_01_12_2024",
-            "path": "bnetza_locations_01_12_2024.csv",
+            "path": "https://github.com/NFDI4Energy/SOMMER/blob/054f0877c1cf021d789de674d1fcbf6ea8eb9b49/bnetza_charging_stations_normalised_01_12_2024/bnetza_locations_01_12_2024.csv",
             "format": "PostgreSQL",
             "schema": {
                 "fields": [
@@ -395,7 +395,7 @@
         {
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_charging_sockets_01_12_2024",
-            "path": "bnetza_charging_sockets_01_12_2024.csv",
+            "path": "https://github.com/NFDI4Energy/SOMMER/blob/054f0877c1cf021d789de674d1fcbf6ea8eb9b49/bnetza_charging_stations_normalised_01_12_2024/bnetza_charging_sockets_01_12_2024.csv",
             "format": "csv",
             "encoding": "utf-8",
             "schema": {
@@ -439,7 +439,7 @@
         {
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_charging_compatibility_01_12_2024",
-            "path": "bnetza_charging_compatibility_01_12_2024.csv",
+            "path": "https://github.com/NFDI4Energy/SOMMER/blob/054f0877c1cf021d789de674d1fcbf6ea8eb9b49/bnetza_charging_stations_normalised_01_12_2024/bnetza_charging_compatibility_01_12_2024.csv",
             "format": "csv",
             "encoding": "utf-8",
             "schema": {
