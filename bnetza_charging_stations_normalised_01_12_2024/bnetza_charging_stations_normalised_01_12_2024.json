@@ -1,7 +1,7 @@
 {
     "name": "bnetza_charging_stations_normalised_01_12_2024",
     "title": "FAIR Charging Station data (Normalised)",
-    "id": "bnetza_charging_stations_normalised_01_12_2024",
+    "@id": "https://databus.dev.dbpedia.link/choyerklick/SOMMER/bnetza_charging_stations_normalised/20240112",
     "description": "Normalised dataset based on the BNetzA charging station data. Column names translated to english.",
     "language": [
         "de-DE",
@@ -66,7 +66,7 @@
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_charging_columns_01_12_2024",
 			"path": "https://github.com/NFDI4Energy/SOMMER/blob/054f0877c1cf021d789de674d1fcbf6ea8eb9b49/bnetza_charging_stations_normalised_01_12_2024/bnetza_charging_columns_01_12_2024.csv",
-            "format": "PostgreSQL",
+            "format": "csv",
             "schema": {
                 "fields": [
                     {
@@ -178,8 +178,8 @@
         {
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_charging_points_01_12_2024",
-            "path": "bnetza_charging_points_01_12_2024.csv",
-            "format": "PostgreSQL",
+            "path": "https://github.com/NFDI4Energy/SOMMER/blob/8830b02b5d26680014a5476fd725a4d9259a7d01/bnetza_charging_stations_normalised_01_12_2024/bnetza_charging_points_01_12_2024.csv",
+            "format": "csv",
             "schema": {
                 "fields": [
                     {
@@ -242,7 +242,7 @@
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_operators_01_12_2024",
             "path": "https://github.com/NFDI4Energy/SOMMER/blob/054f0877c1cf021d789de674d1fcbf6ea8eb9b49/bnetza_charging_stations_normalised_01_12_2024/bnetza_operators_01_12_2024.csv",
-            "format": "PostgreSQL",
+            "format": "csv",
             "schema": {
                 "fields": [
                     {
@@ -275,7 +275,7 @@
             "profile": "tabular-data-resource",
             "name": "model_draft.bnetza_locations_01_12_2024",
             "path": "https://github.com/NFDI4Energy/SOMMER/blob/054f0877c1cf021d789de674d1fcbf6ea8eb9b49/bnetza_charging_stations_normalised_01_12_2024/bnetza_locations_01_12_2024.csv",
-            "format": "PostgreSQL",
+            "format": "csv",
             "schema": {
                 "fields": [
                     {
