@@ -1,0 +1,336 @@
+{
+    "name": "martens_technological_reference",
+    "title": "Technoeconomical parameters of master thesis by Lilli M. Martens",
+    "id": "10.5281/zenodo.10518713",
+    "description": "Data necessary to reproduce the results of the analysis from the master thesis of Lilli Martens with the title: Consideration of Material Criticality for Battery Sub-technologies in an Energy System Optimization Model for Belgium and the Netherlands",
+    "language": [
+        "en-GB",
+        "de-DE"
+    ],
+    "subject": [
+        {
+            "name": "battery",
+            "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000068"
+        },
+        {
+            "name": "renewable energy",
+            "path": "http://openenergy-platform.org/ontology/oeo/OEO_00020085"
+        }
+    ],
+    "context": {
+        "contact": "eugenio.arellanoruiz@dlr.de",
+        "grantNo": "03EI1048A",
+        "fundingAgency": "German Ministry of Economic Affairs and Climate Action"
+    },
+    "contributors": [
+        {
+            "title": "Lilli Martens",
+            "email": "martens_lilli@yahoo.com",
+            "date": "2023-11-25",
+            "object": "data",
+            "comment": "Originally collected the data"
+        },
+        {
+            "title": "Eugenio Salvador Arellano Ruiz",
+            "email": "eugenio.arellanoruiz@dlr.de",
+            "date": "2023-12-14",
+            "object": "both",
+            "comment": "Structure and annotation."
+        }
+    ],
+    "temporal": {
+        "referenceDate": "2023-12-12"
+    },
+    "sources": [
+        {
+            "title": "Consideration of Material Criticality for Battery Sub-technologies in an Energy System Optimization Model for Belgium and the Netherlands",
+            "path": "https://elib.dlr.de/202060/",
+            "description": "Main publication associated to this data.",
+            "licenses": [
+                {
+                    "name": "CC BY 4.0",
+                    "title": "Attribution 4.0 International",
+                    "path": "https://creativecommons.org/licenses/by/4.0",
+                    "attribution": "Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR)",
+                    "instruction": "You are free to copy and redistribute the material in any medium or format. You are free to remix, transform, and build upon the material for any purpose, even commercially."
+                }
+            ]
+        },
+        {
+            "title": "2020 Grid Energy Storage Technology Cost and Performance Assessment",
+            "path": "https://www.pnnl.gov/sites/default/files/media/file/Final%20-%20ESGC%20Cost%20Performance%20Report%2012-11-2020.pdf",
+            "description": "Cost values are estimated based on information provided in this report.",
+            "licenses": [
+                {
+                    "title": "PNNL Important Notices",
+                    "path": "https://www.pnnl.gov/important-notices",
+                    "attribution": "Pacific Northwest National Laboratory"
+                }
+            ]
+        },
+        {
+            "title": "Innovation in Batteries and Electricity Storage",
+            "path": "https://www.iea.org/reports/innovation-in-batteries-and-electricity-storage",
+            "description": "This report is used to estimate technological development trends.",
+            "licenses": [
+                {
+                    "name": "CC BY 4.0",
+                    "title": "Attribution 4.0 International",
+                    "path": "https://www.iea.org/terms/creative-commons-cc-licenses",
+                    "attribution": "IEA 2020",
+                    "instruction": "You are free to copy and redistribute the material in any medium or format. You are free to remix, transform, and build upon the material for any purpose, even commercially."
+                }
+            ]
+        },
+        {
+            "title": "Alternative Battery Technologies Roadmap 2030+",
+            "path": "https://doi.org/10.24406/publica-1342",
+            "description": "Used as reference of market development for batteries & lithium-ion as benchmark and alternative battery technologies",
+            "licenses": [
+                {
+                    "title": "Imprint Fraunhofer-Gesellschaft",
+                    "path": "https://publica.fraunhofer.de/info/imprint",
+                    "instruction": "It is hereby expressly permitted - in accordance with the following restrictions - to copy, print, and distribute these Web pages as well as the attached documents.",
+                    "attribution": "Copyright © by Fraunhofer-Gesellschaft"
+                }
+            ]
+        },
+        {
+            "title": "Solid-State Battery Roadmap 2035+",
+            "path": "https://doi.org/10.24406/publica-68",
+            "description": "Used as reference of current & future developments at material, component, cell and application level.",
+            "licenses": [
+                {
+                    "title": "Imprint Fraunhofer-Gesellschaft",
+                    "path": "https://publica.fraunhofer.de/info/imprint",
+                    "instruction": "It is hereby expressly permitted - in accordance with the following restrictions - to copy, print, and distribute these Web pages as well as the attached documents.",
+                    "attribution": "Copyright © by Fraunhofer-Gesellschaft"
+                }
+            ]
+        },
+        {
+            "title": "A multi-perspective approach for exploring the scenario space of future power systems, Input Data",
+            "path": "https://doi.org/10.23728/b2share.4e5e2d11b8224fb8809cdc2d07eeff04",
+            "description": "Techno-economical parameters of PV and Wind are part of this dataset.",
+            "licenses": [
+                {
+                    "name": "CC BY 4.0",
+                    "title": "Attribution 4.0 International",
+                    "path": "https://creativecommons.org/licenses/by/4.0",
+                    "attribution": "Simon & Xiao (2022)",
+                    "instruction": "You are free to copy and redistribute the material in any medium or format. You are free to remix, transform, and build upon the material for any purpose, even commercially."
+                }
+            ]
+        },
+        {
+            "title": "Database of the European energy storage technologies and facilities",
+            "path": "https://doi.org/10.2906/101110101114/1",
+            "description": "Energy to power rations are calculated based on this data.",
+            "licenses": [
+                {
+                    "name": "CC BY 4.0",
+                    "title": "Attribution 4.0 International",
+                    "path": "https://creativecommons.org/licenses/by/4.0",
+                    "attribution": "European Union",
+                    "instruction": "You are free to copy and redistribute the material in any medium or format. You are free to remix, transform, and build upon the material for any purpose, even commercially."
+                }
+            ]
+        }
+    ],
+    "licenses": [
+        {
+            "name": "CC BY 4.0",
+            "title": "Attribution 4.0 International",
+            "path": "https://creativecommons.org/licenses/by/4.0",
+            "attribution": "Copyright (c) 2023 German Aerospace Center (DLR)",
+            "instruction": "You are free to copy and redistribute the material in any medium or format. You are free to remix, transform, and build upon the material for any purpose, even commercially."
+        }
+    ],
+    "resources": [
+        {
+            "profile": "tabular-data-resource",
+            "name": "renewable_parameters",
+            "path": "renewable_parameters.csv",
+            "format": "csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "technology",
+                        "description": "Technology associated with the parameter",
+                        "isAbout": [
+                            {
+                                "name": "technology",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00000407"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "wind_offshore",
+                                "name": "Offshore wind power technology",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00010426"
+                            },
+                            {
+                                "value": "wind_onshore",
+                                "name": "Onshore wind power technology",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00010426"
+                            },
+                            {
+                                "value": "wind",
+                                "name": "Wind power technology",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00010424"
+                            },
+                            {
+                                "value": "pv",
+                                "name": "Photovoltaic technology",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00010428"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_cost",
+                        "description": "Reference investment cost of the technology.",
+                        "unit": "2018€/kW",
+                        "isAbout": [
+                            {
+                                "name": "Investment cost",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00020167"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime",
+                        "description": "Reference lifetime of the technology.",
+                        "unit": "years",
+                        "isAbout": [
+                            {
+                                "name": "Life time",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00020175"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "om_cost",
+                        "description": "Reference operation and maintenance cost of the technology as percentage of the investment.",
+                        "unit": "%",
+                        "isAbout": [
+                            {
+                                "name": "Fixed cost",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00020168"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "profile": "tabular-data-resource",
+            "name": "storage_parameters",
+            "path": "storage_parameters.csv",
+            "format": "csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "technology",
+                        "description": "Technology associated with the parameter",
+                        "isAbout": [
+                            {
+                                "name": "energy storage technology",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00010426"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "LFP",
+                                "name": "Lithium iron phosphate energy storage technogloy",
+                                "path": "http://openenergy-platform.org/ontology/missing_term"
+                            },
+                            {
+                                "value": "LeadAcid",
+                                "name": "Lead acid energy storage technology",
+                                "path": "http://openenergy-platform.org/ontology/missing_term"
+                            },
+                            {
+                                "value": "NMC",
+                                "name": "Nickel Manganese Cobalt storage technology",
+                                "path": "http://openenergy-platform.org/ontology/missing_term"
+                            },
+                            {
+                                "value": "RedoxFlow",
+                                "name": "Redox flow energy storage technology",
+                                "path": "http://openenergy-platform.org/ontology/missing_term"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "charger_investment",
+                        "description": "Reference investment cost of the power component.",
+                        "unit": "2018€/kW",
+                        "isAbout": [
+                            {
+                                "name": "Investment cost",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00020167"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency",
+                        "description": "Reference roundtrip efficiency of the technology in percentage of the input.",
+                        "unit": "%",
+                        "isAbout": [
+                            {
+                                "name": "Efficicency quantity",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "storage_investment",
+                        "description": "Reference investment cost of the storage component.",
+                        "unit": "2018€/kWh",
+                        "isAbout": [
+                            {
+                                "name": "Investment cost",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00020167"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime",
+                        "description": "Reference lifetime of the technology.",
+                        "unit": "years",
+                        "isAbout": [
+                            {
+                                "name": "Life time",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00020175"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "om_cost",
+                        "description": "Reference operation and maintenance cost of the technology as percentage of the investment.",
+                        "unit": "%",
+                        "isAbout": [
+                            {
+                                "name": "Fixed cost",
+                                "path": "http://openenergy-platform.org/ontology/oeo/OEO_00020168"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "e2p_ratio",
+                        "description": "Reference stored energy to power capacity ratio.",
+                        "unit": "kWh/kW",
+                        "isAbout": [
+                            {
+                                "name": "ratio",
+                                "path": "http://purl.obolibrary.org/obo/UO_0010006"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

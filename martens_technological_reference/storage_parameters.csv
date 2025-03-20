@@ -1,0 +1,5 @@
+technology,charger_investment,efficiency,storage_investment,lifetime,om_cost,e2p_ratio
+LFP,59.64,86.0,197.97,10.0,1.97,0.3
+LeadAcid,108.87,77.0,195.97,12.0,2.65,0.3
+NMC,59.64,86.0,204.49,10.0,2.02,0.3
+RedoxFlow,108.87,68.0,394.51,15.0,3.87,4.0
