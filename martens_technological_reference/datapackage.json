@@ -1,7 +1,7 @@
 {
     "name": "martens_technological_reference",
     "title": "Technoeconomical parameters of master thesis by Lilli M. Martens",
-    "id": "10.5281/zenodo.10518713",
+    "@id": "https://databus.dev.dbpedia.link/choyerklick/SOMMER/martens_technological_reference/20240116",
     "description": "Data necessary to reproduce the results of the analysis from the master thesis of Lilli Martens with the title: Consideration of Material Criticality for Battery Sub-technologies in an Energy System Optimization Model for Belgium and the Netherlands",
     "language": [
         "en-GB",
@@ -150,7 +150,7 @@
         {
             "profile": "tabular-data-resource",
             "name": "renewable_parameters",
-            "path": "renewable_parameters.csv",
+            "path": "https://github.com/NFDI4Energy/SOMMER/blob/0d7d5d9da5e63c97019df07c380db5914838422e/martens_technological_reference/renewable_parameters.csv",
             "format": "csv",
             "encoding": "utf-8",
             "schema": {
@@ -226,7 +226,7 @@
         {
             "profile": "tabular-data-resource",
             "name": "storage_parameters",
-            "path": "storage_parameters.csv",
+            "path": "https://github.com/NFDI4Energy/SOMMER/blob/0d7d5d9da5e63c97019df07c380db5914838422e/martens_technological_reference/storage_parameters.csv",
             "format": "csv",
             "encoding": "utf-8",
             "schema": {
@@ -332,5 +332,87 @@
                 ]
             }
         }
-    ]
+    ],
+	"@context": {
+    "path": "@id",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dct": "http://purl.org/dc/terms/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "oeo": "https://openenergyplatform.org/ontology/oeo/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "time": "http://www.w3.org/2006/time#",
+    "dbo": "http://dbpedia.org/ontology/",
+    "saref": "https://saref.etsi.org/core/",
+    "title": {
+      "@id": "dct:title",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "dct:description",
+      "@type": "xsd:string"
+    },
+    "comment": {
+      "@id": "rdfs:comment",
+      "@type": "xsd:string"
+    },
+    "subject": {
+      "@id": "dc:subject",
+      "@type": "@id"
+    },
+    "keywords": {
+      "@id": "dc:subject",
+      "@type": "xsd:string"
+    },
+    "temporal": {
+      "@id": "time:hasTemporalDuration",
+      "@type": "@id"
+    },
+    "timeseries": {
+      "@id": "time:hasDateTimeDescription",
+      "@type": "@id"
+    },
+    "start": {
+      "@id": "dbo:startDateTime",
+      "@type": "xsd:dateTime"
+    },
+    "end": {
+      "@id": "dbo:endDateTime",
+      "@type": "xsd:dateTime"
+    },
+    "fields": {
+      "@id": "csvw:column",
+      "@type": "@id"
+    },
+    "resources": {
+      "@id": "csvw:table",
+      "@type": "@id"
+    },
+    "schema": {
+      "@id": "csvw:tableSchema",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "rdfs:label",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "csvw:datatype",
+      "@type": "xsd:string"
+    },
+    "unit": {
+      "@id": "oeo:OEO_00040010",
+      "@type": "xsd:string"
+    },
+    "isAbout": {
+      "@id": "saref:isAbout",
+      "@type": "@id"
+    },
+    "valueReference": {
+      "@id": "http://purl.org/goodrelations/v1#valueReference",
+      "@type": "@id"
+    }
+  }
+	
 }
