@@ -1,9 +1,8 @@
 import json
-import os
 import requests
 
-API_KEY = "b3b0ce9e-5873-49f7-9bd8-be3e4ae95916"
-ACCOUNT_NAME = "choyerklick"
+API_KEY = "XXXXX"
+ACCOUNT_NAME = "YYYYY"
 # OR jsut hard-code it if you do not want to change your env variables
 
 DATABUS_URI_BASE = "https://databus.dev.dbpedia.link"
