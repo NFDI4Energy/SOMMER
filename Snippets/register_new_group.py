@@ -2,8 +2,8 @@ import json
 import os
 import requests
 
-API_KEY = "XXXX"
-ACCOUNT_NAME = "ACCOUNT-NAME"
+API_KEY = "b3b0ce9e-5873-49f7-9bd8-be3e4ae95916"
+ACCOUNT_NAME = "choyerklick"
 # OR jsut hard-code it if you do not want to change your env variables
 
 DATABUS_URI_BASE = "https://databus.dev.dbpedia.link"
@@ -18,7 +18,7 @@ headers = {
 }
 
 payload = {
-    "@context": "https://downloads.dbpedia.org/databus/context.jsonld",
+    "@context": f"{DATABUS_URI_BASE}/res/context.jsonld",
     "@graph": {
         "@id": f"{DATABUS_URI_BASE}/{ACCOUNT_NAME}/{GROUP_SLUG}",
         "@type": "Group",
